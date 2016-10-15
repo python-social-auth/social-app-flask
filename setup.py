@@ -11,7 +11,7 @@ def load_requirements():
     return open(join(dirname(__file__), 'requirements.txt')).readlines()
 
 setup(
-    name='python-social-auth-app-flask',
+    name='social-auth-app-flask',
     version=__import__('social_flask').__version__,
     author='Matias Aguirre',
     author_email='matiasaguirre@gmail.com',
