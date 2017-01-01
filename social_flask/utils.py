@@ -2,8 +2,7 @@ from functools import wraps
 
 from flask import current_app, url_for, g
 
-from social_core.utils import module_member, setting_name, get_strategy, \
-    set_current_strategy_getter
+from social_core.utils import module_member, setting_name, get_strategy
 from social_core.backends.utils import get_backend
 
 
@@ -44,6 +43,3 @@ def psa(redirect_uri=None):
             return func(backend, *args, **kwargs)
         return wrapper
     return decorator
-
-
-set_current_strategy_getter(load_strategy)
