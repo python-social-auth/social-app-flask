@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.0](https://github.com/python-social-auth/social-app-flask/releases/tag/1.0.0) - 2017-01-22
+
 ### Changed
 - Remove usage of set/get current strategy methods
 
