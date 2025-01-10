@@ -1,8 +1,14 @@
-from flask import current_app, request, redirect, make_response, session, \
-                  render_template, render_template_string
-
-from social_core.utils import build_absolute_uri
+from flask import (
+    current_app,
+    make_response,
+    redirect,
+    render_template,
+    render_template_string,
+    request,
+    session,
+)
 from social_core.strategy import BaseStrategy, BaseTemplateStrategy
+from social_core.utils import build_absolute_uri
 
 
 class FlaskTemplateStrategy(BaseTemplateStrategy):
@@ -23,7 +29,7 @@ class FlaskStrategy(BaseStrategy):
         if merge:
             data = request.form.copy()
             data.update(request.args)
-        elif request.method == 'POST':
+        elif request.method == "POST":
             data = request.form
         else:
             data = request.args
@@ -37,7 +43,7 @@ class FlaskStrategy(BaseStrategy):
 
     def html(self, content):
         response = make_response(content)
-        response.headers['Content-Type'] = 'text/html;charset=UTF-8'
+        response.headers["Content-Type"] = "text/html;charset=UTF-8"
         return response
 
     def session_get(self, name, default=None):
