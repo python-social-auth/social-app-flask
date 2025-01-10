@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+  push:
+  pull_request:
+
+jobs:
+  release:
+    uses: python-social-auth/social-core/.github/workflows/release-shared.yml@master
+    with:
+      github_event_name: ${{ github.event_name }}
+    permissions:
+      id-token: write
