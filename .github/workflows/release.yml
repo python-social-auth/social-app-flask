@@ -13,8 +13,8 @@ jobs:
     permissions:
       id-token: write
     steps:
-    - uses: actions/checkout@v4
-    - uses: astral-sh/setup-uv@v5
+    - uses: actions/checkout@v4.2.2
+    - uses: astral-sh/setup-uv@v5.4.0
 
     - run: uv build
 
@@ -30,7 +30,7 @@ jobs:
         source venv-install-tar/bin/activate
         uv pip install dist/*.tar.gz
 
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v4.6.2
       if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/')
       with:
         name: dist
