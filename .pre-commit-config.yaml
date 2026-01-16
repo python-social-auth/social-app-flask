@@ -17,7 +17,7 @@ repos:
   - id: pretty-format-json
     args: [--no-sort-keys, --autofix, --no-ensure-ascii]
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.14.2
+  rev: v0.14.13
   hooks:
   - id: ruff-check
     args: [--fix, --exit-non-zero-on-fix]
@@ -27,7 +27,7 @@ repos:
   - id: check-hooks-apply
   - id: check-useless-excludes
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.15.0
+  rev: v2.16.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --indent, '2']
@@ -52,10 +52,10 @@ repos:
     additional_dependencies:
     - tomli
 - repo: https://github.com/rhysd/actionlint
-  rev: v1.7.8
+  rev: v1.7.10
   hooks:
   - id: actionlint
 - repo: https://github.com/zizmorcore/zizmor-pre-commit
-  rev: v1.16.0
+  rev: v1.21.0
   hooks:
   - id: zizmor
