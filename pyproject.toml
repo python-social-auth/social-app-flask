@@ -4,15 +4,15 @@ requires = ["setuptools>=78.0.2"]
 
 [project]
 authors = [
-  {email = "matiasaguirre@gmail.com", name = "Matias Aguirre"}
+  { email = "matiasaguirre@gmail.com", name = "Matias Aguirre" }
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Environment :: Web Environment",
   "Intended Audience :: Developers",
+  "Programming Language :: Python",
   "Programming Language :: Python :: 2.7",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python",
   "Topic :: Internet"
 ]
 dependencies = [
@@ -43,7 +43,7 @@ packages = [
 zip-safe = false
 
 [tool.setuptools.dynamic]
-version = {attr = "social_flask.__version__"}
+version = { attr = "social_flask.__version__" }
 
 [tool.tomlsort]
 ignore_case = true
