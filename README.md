@@ -18,7 +18,7 @@ Project documentation is available at <https://python-social-auth.readthedocs.io
 ## Setup
 
 ```shell
-$ pip install social-auth-app-flask
+pip install social-auth-app-flask
 ```
 
 ## Contributing
