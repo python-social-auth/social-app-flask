@@ -18,7 +18,7 @@ classifiers = [
 dependencies = [
   "flask-login",
   "six",
-  "social-auth-core >= 1.0.0"
+  "social-auth-core >=1.7.0"
 ]
 description = "Python Social Authentication, Flask integration."
 dynamic = ["version"]
